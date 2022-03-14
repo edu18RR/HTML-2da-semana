@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pastelería Edu</title>
+        <style>
+            body {
+                font-family: Century Gothic, Helvetica, sans-serif;
+            }
+         </style>
+    </head>
+<body>
+    <img src="./ima/logo.PNG ">
+    <h1>¡Bienvenido!</h1>
+    <hr>
+    <h2>¡Nuestro Menú!</h2>
+
+    <h3>Sabores disponibles pan</h3>
+    <ul>
+        <li>Naranja.....................................   $25</li>
+        <li>Chocolate...................................   $50</li>
+        <li>Vainilla....................................   $100</li>
+        <li>Combina 2 sabores...........................   $80</li>
+        <li>Combinado 3 sabores o más...................   $120</li>                
+    </ul>
+    <br>
+    <hr>
+
+    <h3>Adornos</h3>
+    <ul>
+        <li>Chispas de chocolate ........................................ $15</li>
+        <li>fruta de temporada .......................................... $35</li>
+        <li>Hojuelas de chocolate ....................................... $45</li>
+    </ul>
+
+    <br>
+    <hr>
+
+    <h3>Betún</h3>
+    <ul>
+        <li>Merengue ....................................... $15</li>
+        <li>Moca ........................................... $18</li>
+        <li>Mantequilla .................................... $25</li>
+    </ul>
+    <br>
+    <hr>
+
+    <h3>Recomendación de la casa</h3>
+    <dl>
+        <dt>Especialidad de la casa ................................... $275</dt>
+        <dd>-Fresas, almendras, y chocolate fundido.</dd>
+        <img src="./ima/espe.PNG ">
+        <dt>Pastel tres leches ................................... $340</dt>
+        <dd>-Fruta al interior, merengue o crema tres leches</dd>
+        <img src="./ima/espe2.PNG ">
+        <dt>El emperador................................... $385</dt>
+        <dd>-Pastel de coco, glaseado y cubierto de chocalete</dd>
+        <img src="./ima/espe3.PNG">
+    </dl>
+    <br>
+    <hr>
+    <h1> Tambien pudes observar lo que estamos cocinando</h1>
+    <a href="./menu chef.html">Las delicias del chef...</a>
+    <hr>
+
+    <h1>Con gusto te ayudamos hacer tu pedido!</h1>
+    
+        <p>Apoyanos con los siguientes datos:</p>
+
+        <label for="name">Nombre:</label><br>
+        <input type="text" id="name" name="name" placeholder="Eduardo"><br>
+
+        <label for="Ape">Apellido:</label><br>
+        <input type="text" id="Ape" name="Ape" placeholder="Rosas"><br>
+
+        <label for="correo">Correo:</label><br>
+        <input type="correo" id="correo" name="correo" placeholder="correoe@email.com"><br>
+
+        <label for="tel1">Numero de teléfono</label><br>
+        <input type="tel" id="tel1" name="tel1" maxlength="10" placeholder="5567083891"><br><br>
+
+        <p>Elige la opción deseada:</p>
+        <input type="radio" id="SugChef" name="SugChef" value="OpcPedido">
+        <label for="SugChef">Asistencia del chef</label><br>
+        <a href="./menu chef.html">Observa lo que esta disponible</a>
+        <br>
+        <input type="radio" id="ElecPas" name="ElecPas" value="Personalizado">
+        <label for="ElecPas">Personalizado y regresa mas tarde</label><br>
+
+        <p>selecciona tu pastel:</p>
+        <input type="radio" id="chef1" name="pastel1" value="chef1">
+        <label for="chef1">Especialidad de la casa</label><br>
+        <input type="radio" id="chef2" name="pastel2" value="chef2">
+        <label for="chef2">Pastel tres leches</label><br>
+                
+        <p>Seleciona el sabor de tu pan:</p>
+        <input type="checkbox" id="sabor1" name="sabor1" value="fresa">
+        <label for="sabor1">Naranja</label><br>
+        <input type="checkbox" id="sabor2" name="sabor2" value="chocolate">
+        <label for="sabor2">Chocolate</label><br>
+        <input type="checkbox" id="sabor3" name="sabor3" value="vainilla">
+        <label for="sabor3">Vainilla</label>
+        <br>
+       
+        <p>Seleciona los adornos para tu pastel:</p>
+        <input type="checkbox" id="adorno1" name="adorno1" value="choco">
+        <label for="adorno1">Chispas de chocolate</label><br>    
+        <input type="checkbox" id="adorno3" name="adorno3" value="fruta de temporada">
+        <label for="adorno3">Hojuelas de chocolate</label><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="fruta">
+        <label for="adorno4">fruta de temporada</label>
+        <input type="text" id="adorno4txt" name="adornor4txt" placeholder="¿Cuáles frutas?"><br>
+        <input type="checkbox" id="adorno4" name="adorno4" value="textolibre">
+        <label for="adorno4">Comparte tu ingrediente</label>
+        <input type="text" id="adorno2txt" name="adornor2txt" placeholder="¿Cúal es tu ingrediente?"><br>
+        <br>
+     
+        <p>Elige el color de pastel:</p>
+        <input type="radio" id="color" name="betun" value="color">
+        <label for="color">Seleciona tu color</label>
+        <label for="sel-color">:</label>
+        <input type="color" id="sel-color" name="sel-color">
+        <br>
+        <br>
+
+        <label for="descripcion">En este apartado puedes adjuntar una imagen de tu petición:</label><br>
+        <input type="text" id="descripcion" name="descripcion" size="300" width="30"><br>
+        <input type="file" id="descripcionimg" name="descripcionimg"><br>
+        <br>
+
+        <p>Total de:</p>
+        <p>$0.00</p>
+        <input type="submit" value="Pagar">
+        <a href="./descrip.html">
+            <input type="button" value= "tu pedido">
+        </a>
+        <br>
+    </form>
+    <hr>
+    <br>
+    
+    <footer>
+        <p>Regresa pronto te esperamos en:</p>
+        <br>
+    <h3>Pastelería Edu</h3>
+    <p>Dirección: Benito Juarez #2, San Bartolo Ameyalco, Ciudad de México, CDMX</p>
+    <p>Teléfono:556708894</p>
+    <p>Servicio de atención es de 6h a 17h de martes a domingo</p>
+  </footer> 
+
+</body>
+</html>
